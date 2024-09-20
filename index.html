@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseña</h1>
+        <form id="passwordForm">
+            <label for="inputWord">Ingresa una palabra:</label>
+            <input type="text" id="inputWord" required>
+            <label for="passwordType">Tipo de contraseña:</label>
+            <select id="passwordType">
+                <option value="alphanumeric">Alfanumérica</option>
+                <option value="numeric">Numérica</option>
+            </select>
+            <button type="submit">Generar Contraseña</button>
+        </form>
+        <p id="generatedPassword"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
